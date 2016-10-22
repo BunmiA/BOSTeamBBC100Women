@@ -1,6 +1,6 @@
 var women = {
 	
-	'defiant' : [
+	'Defiant' : [
 
 		{
 			name: 'Michelle Obama', 
@@ -16,7 +16,7 @@ var women = {
 	]
 	,
 
-	'powerful': [
+	'Smart': [
 		{
 			name: 'Hilary Clinton' , 
 			img:'images/hilary.png',
@@ -29,7 +29,7 @@ var women = {
 		},
 	],
 
-	'sexy': [
+	'Brave': [
 		{
 			name: 'Lady Gaga',
 			img: 'ladygaga.png',
@@ -47,7 +47,7 @@ var women = {
 
 	],
 
-	'strong': [
+	'Strong': [
 				{
 					name: 'Oprah',
 					img: 'oprah.png',

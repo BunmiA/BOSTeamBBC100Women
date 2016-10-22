@@ -33,45 +33,6 @@ document.getElementById("clickMe").onclick = function () { alert('hello!'); };
     <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 
-    <script>
-function getVal(){
-  console.log('hello');
-  var val = $('.atr:checked').val();
-  var fname = $('#fname').val();
-  createPost(fname, val);
-
-}
-
-function createPost(fname, attr){
-  var attrList = women[attr]
-  var randomIndex = genRandomNumber(attrList.length);
-  console.log(randomIndex);
-  var matchedwoman = attrList[randomIndex];
-  console.log(matchedwoman.img);
-
-
-  //console.log(matchedwoman.img);
-  // var post = {
-  //   href: 'http://www.bbc.co.uk/programmes/p01k3j50' ,
-  //     caption: 'hellloooooo whats up',
-  //       picture: matchedwoman.img,
-  //       title: matchedwoman.name,
-  //       description: 'write an interesting description',
-  //       caption: 'i am a caption',
-  //       quote: 'write an interesting quote',
-  //       hashtag: matchedwoman.hashtag
-  // }
-
-  //console.log(post);
-
-
-}
-
-function genRandomNumber(maxIndex){
-  return Math.floor((Math.random() * maxIndex) + 1);
-
-}
-</script>
 
 </head>
 <body>
@@ -99,7 +60,7 @@ function genRandomNumber(maxIndex){
                    <td align="center" ><input type="radio" id="radio1" name="description" value="Defiant" checked="true"/></td>
                    <td align="center" > <input type="radio" id="radio2" name="description" value="Smart"/></td>
                    <td align="center"><input type="radio" id="radio3" name="description" value="Brave"/></td>
-                   <td align="center"><input type="radio" id="radio3" name="description" value="Strong"/></td>
+                   <td align="center"><input type="radio" id="radio4" name="description" value="Strong"/></td>
                </tr>
                <tr >
                    <td align="center">Defiant</td>
