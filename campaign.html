@@ -11,6 +11,9 @@
 	display: none !important;
 }
 </style>
+    <script src="js/logic.js"></script>
+
+
 
 </head>
 <body>
@@ -18,25 +21,25 @@
     <div class="col-sm-2" >
     </div>
     <div class="col-sm-6" >
-        <H2 ALIGN="left">DEFIANCE</H2>
+        <H2 ALIGN="left" id="descriptor"></H2>
         <div class="row">
             <div align="left"  class="col-sm-12" >
-                <h3 align="left">When they go Low, We go High</h3>
+                <h3 align="left" id="quote"></h3>
             </div>
         </div>
         <div class="row">
             <div align="left"  class="col-sm-12" >
-                <h4 align="left"> Bunmi is #Defiance </h4>
+                <h4 align="left" id="xisx"></h4>
             </div>
         </div>
         <div class="row">
             <div align="left" class="col-sm-12"   >
-                <h4 align="left"> Bunmi is #BBC100Women </h4>
+                <h4 align="left" id="xisinsupport"></h4>
             </div>
         </div>
     </div>
      <div class="col-sm-4"  >
-    <img align="left" width="250"src ="images/defiance.png" >
+    <img id="pic" align="left" width="250"src ="" >
     </div>
 </div>
 <div class="row">
@@ -52,6 +55,32 @@
     </div>
 
 </div>
+<script>
 
+    var name=getParameterByName('fname');
+    var attr=getParameterByName('attr');
+
+    console.log(name);
+    console.log(attr);
+
+    //var list=women[attr];
+
+    var list=women[attr];
+    console.log(list);
+    var woman=list[0];
+    console.log(woman.img);
+    console.log(woman.quote);
+   document.getElementById('quote').textContent=woman.quote;
+    var quotes=name + " is " + "#" + attr;
+    document.getElementById('xisx').textContent=quotes;
+    var inSupport=name + " is in support of the #100Women"
+    document.getElementById('xisinsupport').textContent=inSupport;
+    document.getElementById('pic').src="images/" + woman.img;
+
+
+    //        x.querySelector("quote").innerHTML
+    //        quote.innerText =woman.quote;
+
+</script>
 </body>
 </html>
