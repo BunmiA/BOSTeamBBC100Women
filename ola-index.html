@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hack</title>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<script src='women.js'/>
+
+
+
+</head>
+
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    //FB INIT
+    FB.init({
+      appId      : '1715252578795702',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+
+    //FB SHARE
+    function share(src){
+	 FB.ui({
+  		method: 'share',
+  		href: 'https://developers.facebook.com/docs/',
+  		caption: 'hellloooooo whats up',
+        picture: src,
+        title: 'hellooo i am a title',
+        description: 'i am a custom description',
+        caption: 'i am a caption',
+        quote: 'jhjbhjbjhbjbjbbj',
+        hashtag: '#hhbjbjjjhjjj'
+	 }, function(response){});
+
+}
+
+
+  };
+
+
+
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+</script>
+
+
+<p> What's your Name? </p>
+ <p> <input id='fname' type="text" name="firstname"> </p
+
+  <p> What attribute describes you best </p>
+   <input class='atr' type="radio" name="atr" value="defiant"> Defiant<br>
+  <input class='atr' type="radio" name="atr" value="powerful"> Powerful <br>
+  <input class='atr' type="radio" name="atr" value="strong"> Strong <br>
+  <input class='atr' type="radio" name="atr" value="sexy"> Sexy
+
+<button value='submit' onclick='getVal()'> Submit </button>
+
+
+
+<script>
+function getVal(){
+  console.log('hello');
+  var val = $('.atr:checked').val();
+  var fname = $('#fname').val();
+  createPost(fname, val);
+     
+}
+
+function createPost(fname, attr){
+  var attrList = women[attr]
+  var randomIndex = genRandomNumber(attrList.length);
+  console.log(randomIndex);
+  var matchedwoman = attrList[randomIndex];
+  console.log(matchedwoman.img);
+  
+
+  //console.log(matchedwoman.img);
+  // var post = {
+  //   href: 'http://www.bbc.co.uk/programmes/p01k3j50' ,
+  //     caption: 'hellloooooo whats up',
+  //       picture: matchedwoman.img,
+  //       title: matchedwoman.name,
+  //       description: 'write an interesting description',
+  //       caption: 'i am a caption',
+  //       quote: 'write an interesting quote',
+  //       hashtag: matchedwoman.hashtag
+  // }
+
+  //console.log(post);
+
+
+}
+
+function genRandomNumber(maxIndex){
+  return Math.floor((Math.random() * maxIndex) + 1);
+
+}
+</script>
+
+
+
+</html>
+
+

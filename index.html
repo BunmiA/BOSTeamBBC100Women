@@ -12,6 +12,10 @@
 	display: none !important;
 }
 </style>
+    <script>
+
+document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+    </script>
 
    <!-- <p style="text-align:center;"><img src="images/100 women FINAL logo NO swatch.jpg" alt="some_text" style="width:500px;"></p>
 
@@ -47,7 +51,7 @@
         <div class="col-sm-4" >
         </div>
        <div class="col-sm-4" >
-           <H6>Pick the adjective that suites you best</H6>
+           <H6>Pick the adjective that suits you best</H6>
            <table width="400"  margin-bottom="100" >
                <tr >
                    <td align="center" ><input type="radio" id="radio1" name="description" value="Defiant" checked="true"/></td>
@@ -75,11 +79,12 @@
         <div class="col-sm-4" >
         </div>
         <div class="col-sm-4" >
-            <form class="form-inline">
-                <div class="form-group">
+            <form class="form-inline" id="create1">
+                <div class="form-group" id="create2" >
                     <input type="text" class="form-control" placeholder="Enter Your Name">
                 </div>
-                <button type="submit" class="btn btn-default">Create Your Campaign </button>
+                <!--<button type="submit" class="btn btn-default" id="create" >Create Your Campaign </button>-->
+                <input type=button class="btn btn-default"  onClick="location.href='campaign.html'" value='Create your Campaign here'>
             </form>
         </div>
         <div class="col-sm-4" >
