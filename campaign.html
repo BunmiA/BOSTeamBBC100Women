@@ -7,45 +7,42 @@
             href="css/bootstrap.css"
             rel="stylesheet">
     <style type="text/css">
-[ng\:cloak], [ng-cloak], .ng-cloak {
-	display: none !important;
-}
-</style>
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+            display: none !important;
+        }
+    </style>
     <script src="js/logic.js"></script>
-
 
 
 </head>
 <body>
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '1715252578795702',
-            xfbml      : true,
-            version    : 'v2.8'
+            appId: '1715252578795702',
+            xfbml: true,
+            version: 'v2.8'
         });
         FB.AppEvents.logPageView();
 
 
-
-
         //get post info
         var post = {}
-        post.caption =document.getElementById('xisinsupport').textContent;
+        post.caption = document.getElementById('xisinsupport').textContent;
         post.href = document.getElementById('pic').src;
         post.title = 'My #100Women Campaign';
         post.description = '#100Women';
         post.quote = document.getElementById('quote').textContent;
-        post.hashtag ='#100Women';
-        post.img=document.getElementById('pic').src;
+        post.hashtag = '#100Women';
+        post.img = document.getElementById('pic').src;
 
         //add share btn
-        document.getElementById('shareBtn').onclick = function() {
+        document.getElementById('shareBtn').onclick = function () {
             FB.ui({
                 method: 'share',
                 href: post.href,
                 caption: post.caption,
-                picture: post.img ,
+                picture: post.img,
                 title: post.title,
                 description: post.description,
                 caption: post.caption,
@@ -53,69 +50,69 @@
                 hashtag: post.hashtag
 
 
-            }, function(response){});
+            }, function (response) {
+            });
         }
-
-
-
 
 
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <div class="row">
-    <div class="col-sm-2" >
+    <div class="col-sm-2">
     </div>
-    <div class="col-sm-6" >
+    <div class="col-sm-6">
         <H2 ALIGN="left" id="descriptor"></H2>
         <div class="row">
-            <div align="left"  class="col-sm-12" >
+            <div align="left" class="col-sm-12">
                 <h3 align="left" id="quote"></h3>
             </div>
         </div>
         <div class="row">
-            <div align="left"  class="col-sm-12" >
+            <div align="left" class="col-sm-12">
                 <h4 align="left" id="xisx"></h4>
             </div>
         </div>
         <div class="row">
-            <div align="left" class="col-sm-12"   >
+            <div align="left" class="col-sm-12">
                 <h4 align="left" id="xisinsupport"></h4>
             </div>
         </div>
         <div class="row">
-            <div align="left" class="col-sm-12" >
-                <img  src="images/fbook.png" height="30" id='shareBtn'> Share on Facebook</img>
+            <div align="left" class="col-sm-12">
+                <img src="images/fbook.png" height="30" id='shareBtn'> Share on Facebook</img>
             </div>
         </div>
 
     </div>
-     <div class="col-sm-4"  >
-    <img id="pic" align="left" width="250"src ="" >
+    <div class="col-sm-4">
+        <img id="pic" align="left" width="250" src="">
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-2" >
+    <div class="col-sm-2">
     </div>
 
-    <div class="col-sm-8" >
+    <div class="col-sm-8">
         <HR size="15" COLOR="white" WIDTH="60%">
 
     </div>
 
 
-
-    <div class="col-sm-2" >
+    <div class="col-sm-2">
     </div>
     <div class="row">
-        <div align="left"  class="col-sm-12" >
+        <div align="left" class="col-sm-12">
             <a href="http://www.bbc.co.uk/programmes/p01k4f07">
                 <h3 align="center" id="findmore">Find out more about this year's BBC100Women</h3>
             </a>
@@ -124,45 +121,42 @@
     </div>
 
 
-<div class="row">
-    <div class="col-sm-2" >
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+
+        <div align="center" class="col-sm-8">
+            <img src="images/bottomimg.png">
+
+        </div>
+
+        <div class="col-sm-2">
+        </div>
+
     </div>
-
-    <div align="center" class="col-sm-8" >
-        <img  src ="images/bottomimg.png" >
-
-    </div>
-
-    <div class="col-sm-2" >
-    </div>
-
-</div>
 </div>
 <script>
 
-    var name=getParameterByName('fname');
-    var attr=getParameterByName('attr');
+    var name = getParameterByName('fname');
+    var attr = getParameterByName('attr');
 
     console.log(name);
     console.log(attr);
 
     //var list=women[attr];
 
-    var list=women[attr];
+    var list = women[attr];
     console.log(list);
-    var woman=list[0];
+    var woman = list[0];
     console.log(woman.img);
     console.log(woman.quote);
-   document.getElementById('quote').textContent=woman.quote;
-    var quotes=name + " is " + "#" + attr;
-    document.getElementById('xisx').textContent=quotes;
-    var inSupport=name + " is in support of the #100Women"
-    document.getElementById('xisinsupport').textContent=inSupport;
-    document.getElementById('pic').src=woman.img;
+    document.getElementById('quote').textContent = "\"" + woman.quote + "\"";
+    var quotes = name + " is " + "#" + attr;
+    document.getElementById('xisx').textContent = quotes;
+    var inSupport = name + " is in support of the #100Women"
+    document.getElementById('xisinsupport').textContent = inSupport;
+    document.getElementById('pic').src = woman.img;
 
-
-    //        x.querySelector("quote").innerHTML
-    //        quote.innerText =woman.quote;
 
 </script>
 </body>
