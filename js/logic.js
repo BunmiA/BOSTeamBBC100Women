@@ -6,21 +6,15 @@ function getVal() {
     console.log(fname);
     createPost(fname, val);
     window.location = 'campaign.html?fname=' + fname + '&attr=' + val;
-
-
 }
 
 function createPost(fname, attr) {
-
     var attrList = women[attr];
     var matchedwoman = attrList[0];
     console.log(matchedwoman.img.valueOf());
-
-
 }
 
 var women = {
-
     'Defiant': [
 
         {
@@ -45,10 +39,7 @@ var women = {
             name: 'Lady Gaga',
             img: 'https://www.theedgesusu.co.uk/wp-content/uploads/2015/03/lady-gaga-high-quality-wallpaper-cuo.jpg',
             quote: 'I was born this way.'
-
         }
-
-
     ],
 
     'Strong': [
@@ -56,12 +47,8 @@ var women = {
             name: 'Oprah',
             img: 'http://www.mariotestino.com/wp-content/uploads/2014/09/ECN0060V_01-1400x936.jpg',
             quote: 'Think like a Queen. A queen is not afraid to fail.'
-
         }
-
     ]
-
-
 }
 
 function getParameterByName(name, url) {
