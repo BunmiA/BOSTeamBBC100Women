@@ -1,36 +1,152 @@
 var women = {
     'Defiant': [
 
+
         {
-            name: 'Michelle Obama',
-            img: 'https://s-media-cache-ak0.pinimg.com/236x/8c/fc/b8/8cfcb8b8da6585802966c8c8666bfb16.jpg',
-            quote: 'When they go low, we go high.'
-        }
+            name: 'Asel Sadrova',
+            age:'41',
+            country:'Kyrgystan',
+            career:'Archer',
+            img: '100women/asel_sadyrova.jpg',
+            quote: '"When you hold the bow you feel strong.You strive to achieve your goals and it changes your life."'
+        },
+        {
+            name: 'Babs Forman',
+            age:'30s',
+            country:'UK',
+            career:'Make up artist',
+            img: '100women/babs_forman.jpg',
+            quote: '"I set up Skin confindent because I really want to help people feel more confident in their skin"'
+        },
+        {
+            name: 'Carmen Aristegui',
+            age:'52',
+            country:'Mexico',
+            career:'Journalist',
+            img: '100women/carmen_aristegui.jpg',
+            quote: '"Fear is a human ingredient you have to respect.Fear of being attacked or killed, of suffering personal damage.But you have to fight for it not to paralyze you."'
+        },
+
     ]
     ,
 
-    'Resill': [
+    'Resilient': [
         {
-            name: 'Hilary Clinton',
-            img: 'https://s3.amazonaws.com/piktochartv2-dev/v2/uploads/cf81852b-ba9a-4fee-8d91-074a1bf706f4/b928f642da791944dc7634726e308283e2a91a3c_original.jpg',
-            quote: 'Always aim high, work hard and care deeply about what you believe in.'
+            name: 'Dami Olonisakin (Oloni)',
+            age:'26',
+            country:'UK',
+            career:'Sex & Relationships blogger',
+            img: '100women/oloni_profile.jpg',
+            quote: '"It is okay to be celibate."'
+
+        },
+        {
+            name: 'Corinne Maier',
+            age:'52',
+            country:'France',
+            career:'Author',
+            img: '100women/Corinne profile pic 1.jpg',
+            quote: '"A world that cannot be changed is not worth fighting for, but is worth laughing at.'
+
+        },
+        {
+            name: 'Chan Yuen',
+            age:'28',
+            country:'Hong Kong',
+            career:'Football coach',
+            img: '100women/Chan_Yuen_profile.jpg',
+            quote: '"It does not matter if I am 27 or 47, a man or a woman.I am doing my job and trying to won matches for the team.There is nothing unique about it."'
 
         }
     ],
 
-    'Brave': [
+    'Creative': [
         {
-            name: 'Lady Gaga',
-            img: 'https://www.theedgesusu.co.uk/wp-content/uploads/2015/03/lady-gaga-high-quality-wallpaper-cuo.jpg',
-            quote: 'I was born this way.'
+            name: 'Cindy Meston',
+            age:'55',
+            country:'Canada',
+            career:'Clinical Psychology Professor',
+            img: '100women/cindy_meston_profile.jpg.docx.jpg',
+            quote: '"Many people still believe sex cannot be studied in a lab ad such research is not worthy of funding - I disagree."'
+
+        },
+        {
+            name: 'Jamilah Lemieux',
+            age:'32',
+            country:'US',
+            career:'Ebony Magazine editor',
+            img: '100women/Jamilah Profile pic.jpg',
+            quote: '"A world that cannot be changed is not worth fighting for, but is worth laughing at."'
+
+        },
+        {
+            name: 'Katherine Johnson',
+            age:'98',
+            country:'US',
+            career:'Physicist,space scientist and mathematician',
+            img: '100women/katherine Johnson profilepic 1.jpg',
+            quote: '"If you want to know, ask a question.There is no such thing as a dumb question. It is dumb if you do not ask it."'
+
         }
     ],
 
-    'Strong': [
+    'Influential': [
         {
-            name: 'Oprah',
-            img: 'http://www.mariotestino.com/wp-content/uploads/2014/09/ECN0060V_01-1400x936.jpg',
-            quote: 'Think like a Queen. A queen is not afraid to fail.'
+            name: 'Stephanie Harvey',
+            age:'30',
+            country:'Canada',
+            career:'Professional gamer',
+            img: '100women/Stephanie_Harvey_profile.jpg',
+            quote: '"It is harder for women to blossom in esports because there are so few female gamers right now. I really believe you need to be strong, stubborn women to compete, because it’s not easy."'
+
+        },
+        {
+            name: 'Natalia Ponce de Leon',
+            age:'35',
+            country:'Columbia',
+            career:'Human Rights Activist',
+            img: '100women/natalia_ponce_profile.jpg',
+            quote: '"Revenge is not a way to heal."'
+
+        },
+        {
+            name: 'Mercedes Doretti',
+            age:'57',
+            country:'Argentina',
+            career:'Forensic anthropologist',
+            img: '100women/mercedes_doretti_profile.jpg',
+            quote: '"Never underestimate the value of doing what you want in life. Sometimes it might be hard… but I am definitely convinced that is worth it."'
+
+        }
+    ],
+
+    'Pioneer': [
+        {
+            name: 'Paula Hawkins',
+            age:'44',
+            country:'Zimbabwe',
+            career:'Author',
+            img: '100women/paula_hawkins_profile.jpg',
+            quote: '"Why shouldn\'t friendship be just as deep, complex and enriching as a love affair?"'
+
+        },
+        {
+            name: 'Rachida Dati',
+            age:'51',
+            country:'France',
+            career:'Politician',
+            img: '100women/rachida__dati_profile2.jpg',
+            quote: '"So you have to know your subject a lot better-then, that earns you the respect."'
+
+        },
+        {
+            name: 'Liv little',
+            age:'22',
+            country:'UK',
+            career:'Student & Magazine editor',
+            img: '100women/liv_little_profile.jpg',
+            quote: '"As women of colour, we\'ve all faced microaggressions such as people wanting to touch your hair, throwing around the N word, and more."'
+
         }
     ]
 }

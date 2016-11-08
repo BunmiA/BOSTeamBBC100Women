@@ -20,7 +20,7 @@
 <script>
     window.fbAsyncInit = function () {
         FB.init({
-            appId: '1715252578795702',
+            appId: '1813394432240831',
             xfbml: true,
             version: 'v2.8'
         });
@@ -30,9 +30,10 @@
         //get post info
         var post = {}
         post.caption = document.getElementById('xisinsupport').textContent;
+        //seems like picture has to be link -href is what shows up
         post.href = document.getElementById('pic').src;
         post.title = 'My #100Women Campaign';
-        post.description = '#100Women';
+        post.description = document.getElementById('description').textContent;
         post.quote = document.getElementById('quote').textContent;
         post.hashtag = '#100Women';
         post.img = document.getElementById('pic').src;
@@ -46,10 +47,10 @@
                 picture: post.img,
                 title: post.title,
                 description: post.description,
-                caption: post.caption,
+                //caption: post.caption,
                 quote: post.quote,
-                hashtag: post.hashtag
-
+                hashtag: post.hashtag,
+                mobile_iframe: true
 
             }, function (response) {
             });
@@ -87,6 +88,11 @@
         <div class="row">
             <div align="left" class="col-sm-12">
                 <h4 align="left" id="xisinsupport"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div align="left" class="col-sm-12">
+                <h4 align="left" id="description"></h4>
             </div>
         </div>
         <div class="row">
@@ -138,6 +144,12 @@
 </div>
 <script>
 
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     var name = getParameterByName('fname');
     var attr = getParameterByName('attr');
 
@@ -146,15 +158,23 @@
 
     var list = women[attr];
     console.log(list);
-    var woman = list[0];
+
+    var random=getRandomIntInclusive(0,2);
+    console.log('index of category to pick'+random);
+    var woman = list[random];
     console.log(woman.img);
     console.log(woman.quote);
-    document.getElementById('quote').textContent = "\"" + woman.quote + "\"";
-    var quotes = name + " is " + "#" + attr;
+    document.getElementById('quote').textContent = woman.quote;
+    var quotes = "#"+name + "is" + attr;
+
+    if(attr=='Pioneer'){
+        quotes = "#"+name + "isa" + attr;
+    }
     document.getElementById('xisx').textContent = quotes;
     var inSupport = name + " is in support of the #100Women"
     document.getElementById('xisinsupport').textContent = inSupport;
     document.getElementById('pic').src = woman.img;
+    document.getElementById('description').textContent=woman.name+","+woman.age+","+woman.career+","+woman.country;
 
 
 </script>
