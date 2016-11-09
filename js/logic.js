@@ -5,7 +5,7 @@ function getVal() {
     var fname = $('#fname').val();
     console.log(fname);
     createPost(fname, val);
-    window.location = 'campaign.html?fname=' + fname + '&attr=' + val;
+    window.location = 'quotecard.html?fname=' + fname + '&attr=' + val;
 }
 
 function createPost(fname, attr) {
